@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-cafe</title>
+    <link rel="stylesheet" href="/assets/css/customer.css">
+    <link rel="stylesheet" href="/assets/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/boostrap/normalize.css">
+</head>
+<body>
+<main id="customer_Form">
+                    <!--/////Nav Bar////-->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+        <div class="container-fluid">
+            <a id="samplePos" class="navbar-brand gradient-text" href="#">E-Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                    <li class="nav-item">
+                        <a class="nav-link active gradient-text" id="home_page" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="customer_page" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="item_page" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_page" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_details_page" href="orderDetail.html">Order Details</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                    <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!--///////////////////Customer Form///////////////////////-->
+
+        <section>
+            <div class="container form">
+                <div class="row">
+                    <div class="text-center gradient-text">
+                        <h2 id="customer">Customer Add +</h2>
+                    </div>
+                    <div class="col">
+                        <form class="form_input">
+                            <div class="mb-3">
+                                <label for="customer_id" class="form-label">Customer Id</label>
+                                <input type="number" class="form-control" id="customer_id" placeholder="Customer Id">
+                            </div>
+                            <div class="mb-3">
+                                <label for="customer_name" class="form-label">Customer Name</label>
+                                <input type="text" class="form-control" id="customer_name" placeholder="Customer Name">
+                            </div>
+                            <div class="mb-3">
+                                <label for="salary" class="form-label">Customer Contact</label>
+                                <input type="number" class="form-control" id="salary" placeholder="000-000-0000">
+                            </div>
+                            <div class="mb-3">
+                                <label for="address" class="form-label">Customer Address</label>
+                                <textarea class="form-control" id="address" rows="3" placeholder="Address"></textarea>
+                            </div>
+                            <div id="btn">
+                                <button type="button" class="btn btn-primary">ADD</button>
+                                <button type="button" class="btn btn-success">Update</button>
+                                <button type="button" class="btn btn-danger">Delete</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+    <!--  table-->
+        <div class="col table1">
+            <table id="customerTable" class="table ">
+                <thead class="table-primary">
+                <tr>
+                    <th scope="col">Customer Id</th>
+                    <th scope="col">Customer Name</th>
+                    <th scope="col">Customer Contact</th>
+                    <th scope="col">Address</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">3</th>
+                    <td>Nipun Nirmal</td>
+                    <td>070 165 8984</td>
+                    <td>Kalutara</td>
+                </tr>
+                </tbody>
+                <tr>
+            </table>
+        </div>
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</main>
+</body>
+</html>

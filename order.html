@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-cafe</title>
+    <link rel="stylesheet" href="/assets/css/order.css">
+    <link rel="stylesheet" href="/assets/boostrap/bootstrap.min.css">
+    <link rel="stylesheet" href="/assets/boostrap/normalize.css">
+
+</head>
+<body>
+<main id="order_form">
+    <!--/////Nav Bar////-->
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+        <div class="container-fluid">
+            <a id="samplePos" class="navbar-brand gradient-text" href="#">E-Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                    <li class="nav-item">
+                        <a class="nav-link active gradient-text" id="home_page" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="customer_page" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="item_page" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_page" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_details_page" href="orderDetail.html">Order Details</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                    <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+    <!--///////////////////Order Form///////////////////////-->
+
+    <section>
+        <div class="container mb-5">
+            <div class="row">
+                <div class="text-center gradient-text">
+                    <h2 id="customer">Order Form +</h2>
+                </div>
+                <div class="col">
+                    <form class="form_input">
+                        <div class="card-header text-center gradient-text">
+                            Invoice Details
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="order_id" class="form-label">Order Id</label>
+                            <input type="number" class="form-control" id="order_id" placeholder="Order Id Here">
+                        </div>
+                        <div class="mb-3 col-md-11 mt-3">
+                            <label for="order_date" class="form-label">Order Date</label>
+                            <input type="date" class="form-control" id="order_date" placeholder="Order Date Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="customer_id" class="form-label">Customer Id</label>
+                            <input type="number" class="form-control" id="customer_id" placeholder="Customer Id Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="customer_name" class="form-label">Customer Name</label>
+                            <input type="number" class="form-control" id="customer_name"
+                                   placeholder="Customer Name Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="total" class="form-label">Total</label>
+                            <input type="number" class="form-control" id="total" placeholder="Total Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="discount" class="form-label">Discount</label>
+                            <input type="number" class="form-control" id="discount" placeholder="Discount Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="sub_total" class="form-label">Sub Total</label>
+                            <input type="number" class="form-control" id="sub_total" placeholder="Sub Total Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="Cash" class="form-label">Cash</label>
+                            <input type="number" class="form-control" id="Cash" placeholder="Cash Here">
+                        </div>
+                        <div class="mb-3 col-md-11">
+                            <label for="balance" class="form-label">Balance</label>
+                            <input type="number" class="form-control" id="balance" placeholder="Balance Here">
+                        </div>
+                        <div id="btn">
+                            <button type="button" class="btn btn-warning">Purchase</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="col-md-6 mt-3">
+                <form class="form_input2">
+                    <div class="card-header text-center gradient-text">
+                        Order Details
+                    </div>
+                    <div class="mb-3 col-md-11">
+                        <label for="item_code" class="form-label">Item code</label>
+                        <input type="number" class="form-control" id="item_code" placeholder="Item Code">
+                    </div>
+                    <div class="mb-3 col-md-11 mt-3">
+                        <label for="description" class="form-label">Item Description</label>
+                        <input type="date" class="form-control" id="description" placeholder="Item Description">
+                    </div>
+                    <div class="mb-3 col-md-11">
+                        <label for="itemPrice" class="form-label">Price</label>
+                        <input type="number" class="form-control" id="itemPrice" placeholder="Price">
+                    </div>
+                    <div class="mb-3 col-md-11">
+                        <label for="ItemQty" class="form-label">Qty</label>
+                        <input type="number" class="form-control" id="ItemQty" placeholder="Qty">
+                    </div>
+                    <div class="mb-3 col-md-11">
+                        <label for="subTotal" class="form-label">Sub Total</label>
+                        <input type="number" class="form-control" id="subTotal" placeholder="Total">
+                    </div>
+                    <div id="button">
+                        <button type="button" class="btn btn-primary">ADD</button>
+                        <button type="button" class="btn btn-success">Update</button>
+                        <button type="button" class="btn btn-danger">Delete</button>
+                    </div>
+                </form>
+        </div>
+    </section>
+    <!--  table-->
+    <div class="col table1">
+        <table id="orderTable" class="table ">
+            <thead class="table-primary">
+            <tr>
+                <th scope="col">Item code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty On Hand</th>
+                <th scope="col">Qty</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>Black Coffee</td>
+                <td>380</td>
+                <td>100</td>
+                <td>3</td>
+            </tr>
+            </tbody>
+            <tr>
+        </table>
+    </div>
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</main>
+</body>
+</html>

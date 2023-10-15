@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>E-cafe</title>
+    <link rel="stylesheet" href="assets/css/item.css">
+    <link rel="stylesheet" href="assets/boostrap/bootstrap.min.css">
+</head>
+<body>
+<main id="item_Form">
+    <nav id="navBar" class="navbar navbar-expand-lg bg-body-tertiary bg-primary-subtle">
+        <div class="container-fluid">
+            <a id="samplePos" class="navbar-brand gradient-text" href="#">E-Cafe</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menuBar">
+                    <li class="nav-item">
+                        <a class="nav-link active gradient-text" id="home_page" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="customer_page" href="customer.html">Customer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="item_page" href="item.html">Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_page" href="order.html">Order</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link gradient-text" id="order_details_page" href="orderDetail.html">Order Details</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search" id="search">
+                    <input class="form-control me-2" type="search" placeholder="Search Text Here" aria-label="Search">
+                    <button class="btn btn-outline-success gradient-text" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    <section>
+        <div class="container form">
+            <div class="row">
+                <div class="text-center gradient-text">
+                    <h2 id="customer">Items +</h2>
+                </div>
+                <div class="col">
+                    <form class="form_input">
+                        <div class="mb-3">
+                            <label for="item_id" class="form-label">Item Id</label>
+                            <input type="number" class="form-control" id="item_id" placeholder="Item Id">
+                        </div>
+                        <div class="mb-3">
+                            <label for="item_name" class="form-label">Item Name</label>
+                            <input type="text" class="form-control" id="item_name" placeholder="Item Name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="price" class="form-label">Price</label>
+                            <input type="number" class="form-control" id="price" placeholder="price">
+                        </div>
+                        <div class="mb-3">
+                            <label for="qty" class="form-label">Qty on Hand</label>
+                            <textarea class="form-control" id="qty" rows="3" placeholder="Qty on Hand"></textarea>
+                        </div>
+                        <div id="btn">
+                            <button type="button" class="btn btn-primary">ADD</button>
+                            <button type="button" class="btn btn-success">Update</button>
+                            <button type="button" class="btn btn-danger">Delete</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--  table-->
+    <div class="col table1">
+        <table id="itemTable" class="table ">
+            <thead class="table-primary">
+            <tr>
+                <th scope="col">Item Id</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Price</th>
+                <th scope="col">Qty on Hand</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">3</th>
+                <td>Black Coffees</td>
+                <td>Rs380.00</td>
+                <td>50</td>
+            </tr>
+            </tbody>
+            <tr>
+        </table>
+    </div>
+    <script src="assets/js/jQuery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+</main>
+</body>
+</html>
