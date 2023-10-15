@@ -1,0 +1,18 @@
+.form_input{
+    width: 400px;
+    margin-top: 10px;
+}
+#orderTable{
+    position: absolute;
+    width: 420px;
+    margin-left: 725px;
+    top: 620px;
+
+}
+.form_input2{
+    position: absolute;
+    width: 400px;
+    margin-left: 750px;
+    top: 112px;
+}
+

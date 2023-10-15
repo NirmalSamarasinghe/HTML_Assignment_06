@@ -1,0 +1,10 @@
+.form_input{
+    width: 400px;
+    margin-top: 40px;
+}
+#itemTable{
+    position: absolute;
+    width: 750px;
+    margin-left: 560px;
+    bottom: 440px;
+}
